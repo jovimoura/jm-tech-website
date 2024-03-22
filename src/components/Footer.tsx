@@ -14,11 +14,11 @@ export function Footer () {
             Tornamos sua vida mais produtiva e mais rápida.
           </span>
           <div className='flex items-center justify-center gap-3'>
-            <Link to='https://www.instagram.com/rezzumeai/' target='_blank'>
+            <Link to='https://www.instagram.com/jmtech.rj/' target='_blank'>
               <Instagram className='cursor-pointer w-6 h-6' />
             </Link>
             <Link
-              to='https://www.aedin.com/in/jovimoura10/'
+              to='https://www.linkedin.com/in/jovimoura10/'
               target='_blank'
             >
               <Linkedin size={24} className='cursor-pointer' />
@@ -52,7 +52,7 @@ export function Footer () {
             Planos
           </Link>
         </div>
-        <div>
+        {/* <div>
           <span
             className={cn(
               "footer-title text-sm font-light text-primary uppercase leading-5 tracking-widest opacity-100"
@@ -66,11 +66,11 @@ export function Footer () {
           <Link to='/privacy' className='link link-hover'>
             Política de Privacidade
           </Link>
-        </div>
+        </div> */}
       </footer>
       <footer className='px-5 md:px-10 py-4 border-t border-black/10'>
         <span className='flex md:hidden text-xs flex-col items-center text-center justify-center w-full'>
-          © {today.getFullYear()} RezzumeAI • Todos direitos reservados{" "}
+          © {today.getFullYear()} JMTech • Todos direitos reservados{" "}
           <Link
             to='https://jovimoura.vercel.app/'
             target='_blank'
@@ -80,7 +80,7 @@ export function Footer () {
           </Link>
         </span>
         <span className='hidden md:flex items-center justify-center w-full'>
-          © {today.getFullYear()} RezzumeAI • Todos direitos reservados •
+          © {today.getFullYear()} JMTech • Todos direitos reservados •
           Desenvolvido por
           <Link
             to='https://jovimoura.vercel.app/'
