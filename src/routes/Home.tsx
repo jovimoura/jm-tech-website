@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <MaxWidthWrapper className='mb-12 mt-20 sm:mt-32 flex flex-col-reverse md:flex-row items-start justify-center gap-5 md:gap-10 text-center'>
+      <MaxWidthWrapper className='mb-12 mt-20 sm:mt-32 flex flex-col-reverse md:flex-row items-start justify-center gap-5 md:gap-10 text-center px-4'>
         <div className='flex flex-col text-left items-start gap-3'>
           <h1 className='max-w-4xl text-4xl font-bold md:text-6xl lg:text-7xl'>
             Sua equipe de Desenvolvimento como um {" "}
@@ -50,7 +50,7 @@ export default function Home() {
             Comece agora <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
         </div>
-        <img src='/images/home.svg' alt='' className='max-w-lg' />
+        <img src='/images/home.svg' alt='' className='max-w-xs md:max-w-lg' />
       </MaxWidthWrapper>
 
       <div className='relative isolate'>
@@ -114,7 +114,7 @@ export default function Home() {
         </div>
 
         {/* Passos */}
-        <ol className='my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0'>
+        <ol className='my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 px-4'>
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
               <span className='text-xl font-semibold'>
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
 
         {/* Passos */}
-        <ol className='my-8 space-y-4 pt-8 md:flex md:space-x-8 md:space-y-0'>
+        <ol className='my-8 space-y-4 pt-8 px-4 md:flex md:space-x-8 md:space-y-0'>
           <li className='md:flex-1'>
             <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
               <span className='text-7xl text-primary font-bold'>4+</span>
