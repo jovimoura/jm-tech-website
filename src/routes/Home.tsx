@@ -18,6 +18,42 @@ const RezzumeAIIcon = () => (
   </div>
 );
 
+const technologies = [
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/atom/atom-original-wordmark.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -25,7 +61,7 @@ export default function Home() {
       <MaxWidthWrapper className='mb-12 mt-20 sm:mt-32 flex flex-col-reverse md:flex-row items-start justify-center gap-5 md:gap-10 text-center px-4'>
         <div className='flex flex-col text-left items-start gap-3'>
           <h1 className='max-w-4xl text-4xl font-bold md:text-6xl lg:text-7xl'>
-            Sua equipe de Desenvolvimento como um {" "}
+            Sua equipe de Desenvolvimento como um{" "}
             <span className='text-primary'>Serviço.</span>
           </h1>
           <p className='mt-5 max-w-prose text-zinc-700 sm:text-lg'>
@@ -45,7 +81,7 @@ export default function Home() {
           <Link
             className={buttonVariants({ size: "lg", className: "mt-5" })}
             to={contactlink}
-            target="_blank"
+            target='_blank'
           >
             Comece agora <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
@@ -78,7 +114,7 @@ export default function Home() {
               <div className='flex mt-10 flex-col md:flex-row items-center justify-center gap-10'>
                 <RezzumeAIIcon />
                 <img src='/icons/engerisco.svg' alt='' />
-                <div className="px-5 py-2 bg-[#111] rounded-xl">
+                <div className='px-5 py-2 bg-[#111] rounded-xl'>
                   <Icons.captanIcon />
                 </div>
               </div>
@@ -98,6 +134,49 @@ export default function Home() {
             className='relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]'
           />
         </div>
+      </div>
+
+      <div id='about' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
+        <div className='mb-12 px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl sm:text-center'>
+            <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
+              Sobre nós
+            </h2>
+            <p className='mt-4 text-lg text-gray-600'>
+              Por mais de quatro anos, ajudamos startups e pequenas empresas a
+              lançarem plataformas disruptivas!
+            </p>
+          </div>
+        </div>
+
+        {/* Passos */}
+        <ol className='my-8 space-y-4 pt-8 px-4 md:flex md:space-x-8 md:space-y-0'>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
+              <span className='text-7xl text-primary font-bold'>4+</span>
+              <span className='mt-2 text-zinc-700'>
+                Anos de existência e em plena atividade 🚴‍♀️🚴‍♀️🚴‍♀️
+              </span>
+            </div>
+          </li>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
+              <span className='text-7xl text-primary font-bold'>4.8</span>
+              <span className='mt-2 text-zinc-700'>
+                Média de experiência dos desenvolvedores na indústria (em anos)
+                🤓
+              </span>
+            </div>
+          </li>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
+              <span className='text-7xl text-primary font-bold'>+10</span>
+              <span className='mt-2 text-zinc-700'>
+                Projetos Entregues por todo país 🇧🇷
+              </span>
+            </div>
+          </li>
+        </ol>
       </div>
 
       <div id='product' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
@@ -155,48 +234,28 @@ export default function Home() {
         </ol>
       </div>
 
-      <div id='about' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
+      <div id='focus' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl sm:text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
-              Sobre nós
+              Tecnologias
             </h2>
             <p className='mt-4 text-lg text-gray-600'>
-              Por mais de quatro anos, ajudamos startups e pequenas empresas a
-              lançarem plataformas disruptivas!
+              Conheça as nossas especialidades!
             </p>
           </div>
         </div>
 
         {/* Passos */}
-        <ol className='my-8 space-y-4 pt-8 px-4 md:flex md:space-x-8 md:space-y-0'>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
-              <span className='text-7xl text-primary font-bold'>4+</span>
-              <span className='mt-2 text-zinc-700'>
-                Anos de existência e em plena atividade 🚴‍♀️🚴‍♀️🚴‍♀️
-              </span>
-            </div>
-          </li>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
-              <span className='text-7xl text-primary font-bold'>4.8</span>
-              <span className='mt-2 text-zinc-700'>
-                Média de experiência dos desenvolvedores na indústria (em anos)
-                🤓
-              </span>
-            </div>
-          </li>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 md:pb-0 md:pl-0 md:pt-4 items-center justify-center text-center text-base'>
-              <span className='text-7xl text-primary font-bold'>+10</span>
-              <span className='mt-2 text-zinc-700'>
-                Projetos Entregues por todo país 🇧🇷
-              </span>
-            </div>
-          </li>
+        <ol className='my-8 pt-8 flex-wrap gap-5 flex items-center justify-center md:space-x-8 px-4'>
+          {technologies.map(({ src }) => (
+            <li key={src} className='flex-1 min-w-20 flex items-start justify-start m-0'>
+              <img src={src} className="w-20"/>
+            </li>
+          ))}
         </ol>
       </div>
+
       <Footer />
     </>
   );

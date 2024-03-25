@@ -1,8 +1,11 @@
 import { ArrowRight, Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { contactlink } from "@/consts";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
-export function MobileNav () {
+export function MobileNav() {
   const [isOpen, setOpen] = useState<boolean>(false);
 
   const toggleOpen = () => setOpen((prev) => !prev);
@@ -12,7 +15,7 @@ export function MobileNav () {
 
   useEffect(() => {
     if (isOpen) toggleOpen();
-      // @ts-ignore
+    // @ts-ignore
   }, [pathname]);
 
   const closeOnCurrent = (href: string) => {
@@ -31,31 +34,67 @@ export function MobileNav () {
       {isOpen ? (
         <div className='fixed animate-in slide-in-from-top-5 fade-in-20 inset-0 z-0 w-full'>
           <ul className='absolute bg-white border-b border-zinc-200 shadow-xl grid w-full gap-3 px-5 md:px-10 pt-10 md:pt-20 pb-5 md:pb-8'>
-                <li>
-                  <Link
-                    onClick={() => closeOnCurrent("/sign-up")}
-                    className='flex items-center w-full font-semibold text-green-600'
-                    to='/sign-up'
-                  >
-                    Comece já
-                    <ArrowRight className='ml-2 h-5 w-5' />
-                  </Link>
-                </li>
-                <li className='my-3 h-px w-full bg-gray-300' />
-                <li className='my-3 h-px w-full bg-gray-300' />
-                <li>
-                  <Link
-                    onClick={() => closeOnCurrent("/pricing")}
-                    className='flex items-center w-full font-semibold'
-                    to='/pricing'
-                  >
-                    Preços
-                  </Link>
-                </li>
-
+            <li>
+              <Link
+                onClick={() => closeOnCurrent("/")}
+                className='flex items-center w-full font-semibold'
+                to='/'
+              >
+                Início
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => closeOnCurrent("/#about")}
+                className='flex items-center w-full font-semibold'
+                to='/about'
+              >
+                Sobre nós
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => closeOnCurrent("/how-it-works")}
+                className='flex items-center w-full font-semibold'
+                to='/how-it-works'
+              >
+                Como funciona?
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => closeOnCurrent("/#focus")}
+                className='flex items-center w-full font-semibold'
+                to='/focus'
+              >
+                Área de Foco
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => closeOnCurrent("/pricing")}
+                className='flex items-center w-full font-semibold'
+                to='/pricing'
+              >
+                Preços
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={cn(
+                  buttonVariants({
+                    size: "sm",
+                  }),
+                  "hidden sm:flex"
+                )}
+                to={contactlink}
+              >
+                Comece agora <ArrowRight className='ml-1.5 h-5 w-5' />
+              </Link>
+            </li>
           </ul>
         </div>
       ) : null}
     </div>
   );
-};
+}

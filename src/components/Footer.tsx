@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
+import { contactlink } from "@/consts";
 
 export function Footer () {
   const today = new Date();
@@ -36,37 +37,13 @@ export function Footer () {
           <a href='/#about' className='link link-hover'>
             Sobre
           </a>
-          <a href='/#product' className='link link-hover'>
-            Produto
+          <a href='/privacy' className='link link-hover'>
+            Privacidade
+          </a>
+          <a href={contactlink} target="_blank" className='link link-hover'>
+            Contato
           </a>
         </div>
-        <div>
-          <span
-            className={cn(
-              "footer-title text-sm font-light text-primary uppercase leading-5 tracking-widest opacity-100"
-            )}
-          >
-            Produto
-          </span>
-          <Link to='/pricing' className='link link-hover'>
-            Planos
-          </Link>
-        </div>
-        {/* <div>
-          <span
-            className={cn(
-              "footer-title text-sm font-light text-primary uppercase leading-5 tracking-widest opacity-100"
-            )}
-          >
-            Legal
-          </span>
-          <Link to='/terms' className='link link-hover'>
-            Termos de Uso
-          </Link>
-          <Link to='/privacy' className='link link-hover'>
-            Política de Privacidade
-          </Link>
-        </div> */}
       </footer>
       <footer className='px-5 md:px-10 py-4 border-t border-black/10'>
         <span className='flex md:hidden text-xs flex-col items-center text-center justify-center w-full'>
