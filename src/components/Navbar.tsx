@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 import { MaxWidthWrapper } from "./MaxWidthWrapper";
@@ -13,48 +13,49 @@ export function Navbar() {
     <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all'>
       <MaxWidthWrapper>
         <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
-          <Logo />
+          <div className='flex items-center justify-center gap-4'>
+            <MobileNav />
+            <Logo />
+          </div>
 
-          <MobileNav />
-
-          <div className='hidden items-center space-x-4 sm:flex'>
-            <Link
+          <div className='hidden items-center space-x-4 md:flex'>
+            <NavLink
               to='/'
-              className={buttonVariants({
-                variant: "ghost",
+              className={({ isActive }) => buttonVariants({
+                variant: isActive ? "activeGhost" : "ghost",
                 size: "sm",
               })}
             >
               Início
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to='/about'
-              className={buttonVariants({
-                variant: "ghost",
+              className={({ isActive }) => buttonVariants({
+                variant: isActive ? "activeGhost" : "ghost",
                 size: "sm",
               })}
             >
               Sobre nós
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to='/how-it-works'
-              className={buttonVariants({
-                variant: "ghost",
+              className={({ isActive }) => buttonVariants({
+                variant: isActive ? "activeGhost" : "ghost",
                 size: "sm",
               })}
             >
               Como funciona?
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to='/focus'
-              className={buttonVariants({
-                variant: "ghost",
+              className={({ isActive }) => buttonVariants({
+                variant: isActive ? "activeGhost" : "ghost",
                 size: "sm",
               })}
             >
               Área de Foco
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to='/pricing'
               className={buttonVariants({
                 variant: "ghost",
@@ -62,17 +63,17 @@ export function Navbar() {
               })}
             >
               Preços
-            </Link>
+            </NavLink>
           </div>
           <Link
             className={cn(
               buttonVariants({
                 size: "sm",
               }),
-              "hidden sm:flex"
+              ""
             )}
             to={contactlink}
-            target="_blank"
+            target='_blank'
           >
             Comece agora <ArrowRight className='ml-1.5 h-5 w-5' />
           </Link>

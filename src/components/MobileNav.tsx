@@ -25,10 +25,10 @@ export function MobileNav() {
   };
 
   return (
-    <div className='sm:hidden'>
+    <div className='md:hidden'>
       <Menu
         onClick={toggleOpen}
-        className='relative z-50 h-5 w-5 text-zinc-700'
+        className='relative z-50 h-5 w-5 text-zinc-700 cursor-pointer'
       />
 
       {isOpen ? (
@@ -85,7 +85,7 @@ export function MobileNav() {
                   buttonVariants({
                     size: "sm",
                   }),
-                  "hidden sm:flex"
+                  ""
                 )}
                 to={contactlink}
               >

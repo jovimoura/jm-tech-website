@@ -18,7 +18,7 @@ const RezzumeAIIcon = () => (
   </div>
 );
 
-const technologies = [
+export const technologies = [
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
@@ -106,7 +106,7 @@ export default function Home() {
         <div>
           <div className='mx-auto max-w-6xl px-6 lg:px-8'>
             <div className='mt-20 flex flex-col gap-10 sm:mt-32 items-center'>
-              <div className='mx-auto max-w-2xl sm:text-center'>
+              <div className='mx-auto max-w-2xl text-center'>
                 <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
                   Nossos Clientes
                 </h2>
@@ -138,7 +138,7 @@ export default function Home() {
 
       <div id='about' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl sm:text-center'>
+          <div className='mx-auto max-w-2xl text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
               Sobre nós
             </h2>
@@ -181,7 +181,7 @@ export default function Home() {
 
       <div id='product' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl sm:text-center'>
+          <div className='mx-auto max-w-2xl text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
               Por que a JM<span className='text-primary'>Tech</span>?
             </h2>
@@ -236,7 +236,7 @@ export default function Home() {
 
       <div id='focus' className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl sm:text-center'>
+          <div className='mx-auto max-w-2xl text-center'>
             <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl'>
               Tecnologias
             </h2>

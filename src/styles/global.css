@@ -65,6 +65,10 @@ body {
   body {
     @apply bg-background text-foreground font-sans;
   }
+
+  .title-2 {
+    @apply mt-2 font-bold text-4xl text-gray-900 sm:text-5xl text-center;
+  }
 }
 
 .grainy {
