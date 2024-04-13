@@ -18,7 +18,7 @@ export default function HowItWorks() {
               Freelancers
             </span>
             . <br />
-            JM<span className='text-primary'>Tech</span> é <br />
+            <span className="font-bold">JM<span className='text-primary'>Tech</span></span> é <br />
             Sua <span className='text-primary font-bold'> Solução.</span>
           </h1>
         </div>

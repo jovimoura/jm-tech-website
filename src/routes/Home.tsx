@@ -83,7 +83,7 @@ export default function Home() {
             to={contactlink}
             target='_blank'
           >
-            Comece agora <ArrowRight className='ml-2 h-5 w-5' />
+            Entre em contato <ArrowRight className='ml-2 h-5 w-5' />
           </Link>
         </div>
         <img src='/images/home.svg' alt='' className='max-w-xs md:max-w-lg' />

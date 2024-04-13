@@ -47,7 +47,7 @@ export default function Focus() {
 
         <div className='flex flex-col gap-1 my-2 items-center justify-center'>
           <span className='text-muted-foreground uppercase text-sm font-medium leading-5 tracking-widest'>
-            NOSSO FOCO
+            NOSSO FOCO:
           </span>
           <p className='max-w-prose text-zinc-700 text-center px-5 md:px-0'>
             React, React Native, Angular, Vue, Swift, Python, Ruby on Rails,

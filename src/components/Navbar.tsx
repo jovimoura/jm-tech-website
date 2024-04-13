@@ -75,7 +75,7 @@ export function Navbar() {
             to={contactlink}
             target='_blank'
           >
-            Comece agora <ArrowRight className='ml-1.5 h-5 w-5' />
+            Entre em Contato <ArrowRight className='ml-1.5 h-5 w-5' />
           </Link>
         </div>
       </MaxWidthWrapper>
