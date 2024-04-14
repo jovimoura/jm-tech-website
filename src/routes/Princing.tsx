@@ -11,8 +11,8 @@ export default function Princing() {
     <>
       <Navbar />
 
-      <MaxWidthWrapper className='mx-auto mb-32 mt-24 max-w-5xl sm:mt-32'>
-        <div className='mb-12 px-6 lg:px-8'>
+      <MaxWidthWrapper className='mx-auto mt-24 max-w-5xl sm:mt-32'>
+        <div className='px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl text-center'>
             <h2 className='title-2 uppercase tracking-widest'>preços</h2>
             <p className='mt-4 text-lg text-gray-600'>
