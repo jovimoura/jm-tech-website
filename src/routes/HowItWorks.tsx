@@ -1,6 +1,10 @@
 import { Footer } from "@/components/Footer";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { Navbar } from "@/components/Navbar";
+import { buttonVariants } from "@/components/ui/button";
+import { contactlink } from "@/consts";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function HowItWorks() {
   return (
@@ -81,6 +85,23 @@ export default function HowItWorks() {
             <p className='text-xl'>
               Após desenvolvermos seu projeto fazemos uma série de testes interno e juntos com você para que você finalmente tenha seu projeto na nuvem!
             </p>
+          </div>
+        </div>
+      </MaxWidthWrapper>
+
+      <MaxWidthWrapper className='mx-auto mb-32 mt-24 max-w-5xl sm:mt-32'>
+        <div className='mb-12 px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl text-center'>
+            <h2 className='mt-2 font-bold text-4xl text-gray-900 sm:text-5xl mb-5 md:mb-16'>
+              Lançamos sua aplicação em poucos meses!🚀
+            </h2>
+            <Link
+              className={buttonVariants({ size: "lg", className: "mt-5" })}
+              to={contactlink}
+              target='_blank'
+            >
+              Vamos fazer acontecer <ArrowRight className='ml-2 h-5 w-5' />
+            </Link>
           </div>
         </div>
       </MaxWidthWrapper>
