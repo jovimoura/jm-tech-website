@@ -47,7 +47,7 @@ export function Footer () {
       <footer className='px-5 md:px-10 py-4 border-t border-black/10'>
         <div className="hidden md:flex items-center justify-between text-sm text-muted-foreground">
         <span className='hidden md:flex items-center justify-center'>
-          © {today.getFullYear()} JMTech • Todos direitos reservados •
+          © {today.getFullYear()} JMTech Solutions • Todos direitos reservados •
           Desenvolvido por
           <Link
             to='https://jovimoura.vercel.app/'
@@ -67,7 +67,7 @@ export function Footer () {
         </div>
         </div>
         <span className='flex md:hidden text-xs flex-col items-center text-center justify-center w-full'>
-          © {today.getFullYear()} JMTech • Todos direitos reservados{" "}
+          © {today.getFullYear()} JMTech Solutions • Todos direitos reservados{" "}
           <Link
             to='https://jovimoura.vercel.app/'
             target='_blank'

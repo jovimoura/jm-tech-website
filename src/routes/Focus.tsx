@@ -38,9 +38,9 @@ export default function Focus() {
               Desenvolvemos para Web & Mobile (IOS, Android)
             </h2>
             <p className='mt-4 text-lg text-gray-600'>
-              JMTech tradicionalmente tem se concentrado em aplicativos móveis
+              JMTech Solutions tradicionalmente tem se concentrado em aplicativos, web e móveis,
               agradáveis e bonitos para os usuários e possui uma forte expertise
-              em Engenharia de Software Mobile.
+              em Engenharia de Software Mobile e Web.
             </p>
           </div>
         </div>

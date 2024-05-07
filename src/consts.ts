@@ -3,7 +3,7 @@ const PHONE_NUMBER = "5521984954753"
 const message = `
   Olá John!
 
-  \n 🚀 Gostaria de criar um novo app com a JM Tech!
+  \n 🚀 Gostaria de criar um novo app com a JM Tech Solutions!
   
 `;
 
