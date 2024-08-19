@@ -57,8 +57,8 @@ export function Navbar() {
             </NavLink>
             <NavLink
               to='/pricing'
-              className={buttonVariants({
-                variant: "ghost",
+              className={({ isActive }) => buttonVariants({
+                variant: isActive ? "activeGhost" : "ghost",
                 size: "sm",
               })}
             >
