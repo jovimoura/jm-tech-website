@@ -14,6 +14,20 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    src: "/images/projects/yoresume.png",
+    name: "YoResume",
+    link: "https://www.yoresume.work/",
+    description:
+      "O YoResume simplifica a criação e aumenta a perfomance de leitura de currículos ATS!",
+  },
+  {
+    src: "/images/projects/travels.png",
+    name: "Travels & CIA",
+    link: "https://travelsecia.com.br/",
+    description:
+      "Landing page da empresa de viagens Travels & CIA.",
+  },
+  {
     src: "/images/projects/rezzumeai.png",
     name: "RezzumeAI",
     link: "https://www.rezzumeai.com/",
